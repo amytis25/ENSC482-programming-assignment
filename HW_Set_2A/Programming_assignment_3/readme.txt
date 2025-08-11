@@ -15,4 +15,4 @@ The additional libraries were installed using the following commands (note insta
 
 Data Set used for this assignment: https://www.kaggle.com/datasets/wasiqaliyasir/breast-cancer-dataset (attached in submission zip folder)
 
-The assignment file is called prob1.py and it can be run through terminal using the command "python prob3.py". 
+The assignment file is called prob1.py and it can be run through terminal using the command "python prob3.py". The results of the visual are also included in the folder labeled as results.png.

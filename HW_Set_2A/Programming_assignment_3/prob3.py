@@ -4,13 +4,10 @@ from OpenGL.GLU import *
 import numpy as np
 import pandas as pd
 
-# === Utility math ===
 
 def fit_line(x, y):
-    """
-    Ordinary Least Squares y = m x + b
-    Returns: m, b, r2
-    """
+    # Ordinary Least Squares y = m x + b
+    # Returns: m, b, r2
     # ensure numpy arrays and drop NaNs if any
     x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)
@@ -29,7 +26,7 @@ def fit_line(x, y):
     return float(m), float(b), r2
 
 class Scale:
-    """Maps raw data to normalized OpenGL coordinates [-1, 1] with a safety margin."""
+    # Maps raw data to normalized OpenGL coordinates [-1, 1] with a safety margin.
     def __init__(self, v, margin=0.9):
         v = np.asarray(v, dtype=float)
         self.vmin = float(np.nanmin(v))

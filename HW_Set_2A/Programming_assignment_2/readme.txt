@@ -15,6 +15,6 @@ The additional libraries were installed using the following commands (note insta
 Data Set used for this assignment: https://www.kaggle.com/datasets/wasiqaliyasir/breast-cancer-dataset (attached in submission zip folder)
 
 The assignment file is called prob1.py and it can be run through terminal using the command "python prob2.py". 
-The visual (scatter plot) will appear in a pop-up window and the details are provided in the terminal. 
+The visual (scatter plot) will appear in a pop-up window and the details are provided in the terminal. The results of the visual are also included in the folder labeled as results.png.
 
 In this assignment, covariance and correlation of 3 variables from the Breast Cancer dataset used in the previous assignment were calculated using the NumPy python library, and was visualized on a scatter plot using OpenGL. The correlation matrix, displayed with the terminal output on the right of the scatter plot is organized as the first row/column corresponding to radius, the second corresponding to texture, and the third corresponding to smoothness. As seen in the correlation matrix, all of the variable correlations are pretty weak, with the stringest correlation being between radius and texture with around 0.32.  

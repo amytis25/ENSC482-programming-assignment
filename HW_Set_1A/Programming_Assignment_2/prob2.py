@@ -44,7 +44,7 @@ class App:
             
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
-            # don’t regenerate colors/positions every frame
+            
             self.print_groceries(self.items)
             self.print_block_sort_legend()
 
@@ -86,15 +86,14 @@ class App:
 
     # sorting algorithm reference: https://www.softwaretestinghelp.com/sorting-techniques-in-cpp/
     def bubbleSortList(self, items):
-        
-
         # Manual in-place sort (case-insensitive)
         n = len(items)
         for i in range(n):
             for j in range(i + 1, n):
                 if items[j].casefold() < items[i].casefold():
                     items[i], items[j] = items[j], items[i]
-    # NEW: bubble sort colors by red channel (ascending)
+
+    # bubble sort colors by red channel (ascending)
     def bubbleSortColorsByR(self, colors):
         arr = colors[:]  # copy, keep original order intact
         n = len(arr)
